@@ -7,8 +7,7 @@ const getTotalBalanceByGender = (users, gender) => {
     .reduce((totalBalance, user) => totalBalance + user.balance, 0);
 };
 
-// Тестові дані
-const allUsers = [
+const allUserss = [
   {
     name: 'Moore Hensley',
     gender: 'male',
@@ -46,7 +45,6 @@ const allUsers = [
   },
 ];
 
-// Виклики функції з тестовими даними та виведення результату в консоль
-console.log(getTotalBalanceByGender(allUsers, 'male')); // 12053
+console.log(getTotalBalanceByGender(allUserss, 'male')); // 12053
 
-console.log(getTotalBalanceByGender(allUsers, 'female')); // 8863
+console.log(getTotalBalanceByGender(allUserss, 'female')); // 8863
