@@ -1,7 +1,4 @@
-// Оголошення стрілочної функції getTotalBalanceByGender
 const getTotalBalanceByGender = (users, gender) => {
-  // Використання методу filter для відбору користувачів за статтю
-  // Використання методу reduce для підрахунку загального балансу
   return users
     .filter(user => user.gender === gender)
     .reduce((totalBalance, user) => totalBalance + user.balance, 0);
